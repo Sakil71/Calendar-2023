@@ -1,0 +1,48 @@
+.header {
+    text-align: center;
+}
+
+.months {
+    display: flex;
+    align-items: center;
+}
+
+.months a {
+    text-decoration: none;
+    padding: 0 30px;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+
+.month {
+    font-size: 1.5em;
+    margin: 0 20px;
+}
+
+.calendar {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(6, 50px);
+    gap: 20px;
+}
+
+.date,
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: rgb(179, 216, 216);
+    cursor: pointer;
+}
+
+.day {
+    background-color: rgb(171, 192, 209);
+}
+
+.other-date {
+    background-color: rgb(227, 227, 227);
+}
